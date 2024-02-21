@@ -10,8 +10,13 @@
 </head>
 <body>
     <div id="root"></div>
-    <script type="text/bable">
-        
+    <script type="text/babel">
+        function friend() {
+            return <h1>Frustrated Ashon</h1>
+        }
+        const {createRoot} = ReactDOM 
+        const root = createRoot(document.getElementById("root"));
+        root.render(<friend/>)
     </script>
     
 </body>
